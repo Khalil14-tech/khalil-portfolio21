@@ -549,9 +549,8 @@ footer{
     grid-template-columns:1fr;
 }
 #portfolio .row{
-       align-items: center;
-    margin: auto;
-    width: 320px;
+        margin-left: 3rem;
+    margin-right: 3rem;
 }
 
 #contact .row{
