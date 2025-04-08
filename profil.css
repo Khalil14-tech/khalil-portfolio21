@@ -548,6 +548,11 @@ footer{
 #skills .skills-content .row ,#services .row , #portfolio .row{
     grid-template-columns:1fr;
 }
+#portfolio .row{
+       align-items: center;
+    margin: auto;
+    width: 320px;
+}
 
 #contact .row{
     padding: 2rem 1rem;
