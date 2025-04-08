@@ -394,6 +394,7 @@ a {
 
 #portfolio .row .item .item-content{
     padding: 20px 15px 30px;
+    background-color: var(--bg-primary);
 }
 
 #portfolio .row .item .item-content h3{
