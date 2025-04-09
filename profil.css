@@ -519,7 +519,7 @@ footer{
 
 /**Mbile Responsive*/
 
-@media (max-width:600px){
+@media (min-width:300px) and  (max-width:600px){
     #home  .header-content h1{
         font-size: 38px;
     }
