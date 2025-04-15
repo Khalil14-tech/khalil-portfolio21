@@ -78,6 +78,7 @@ a {
 #home {
     background-color: var(--bg-primary);
     height: 100vh;
+    background-image: linear-gradient(to bottom , #ecf0f3 ,transparent);
 }
 
 #home .navbar {
@@ -439,12 +440,13 @@ a {
 }
 
 
-#contact .row input,#contact .row textarea{
+#contact .row input,
+#contact .row textarea
+{
     display: block;
     width: 100%;
     margin: 20px 0;
     padding: 10px;
-    outline: none;
     border: 1px solid #bbb;
     background:#04f4ab0c;
 }
@@ -489,6 +491,7 @@ footer{
 
     #home  .header-content h1{
         font-size: 50px;
+        
     }
 
     #home  .header-content img{
@@ -507,7 +510,7 @@ footer{
     }
 
     #contact .row img{
-        max-width:  300px; ;
+        max-width:  300px; 
         margin: auto;
     }
 
@@ -517,9 +520,16 @@ footer{
 }
 
 
-/**Mbile Responsive*/
+/**Mobile Responsive*/
 
-@media (min-width:300px) and  (max-width:700px){
+@media (min-width:300px) and (max-width:700px ){
+
+    
+    #home  .header-content img{
+        max-height: 150px;
+        width: 200px;
+        margin: auto;}
+        
     #home  .header-content h1{
         font-size: 38px;
     }
@@ -528,6 +538,10 @@ footer{
         font-size: 16px;
     }
 
+    #home  .header-content p span{
+        margin-bottom: 50px;
+        
+    }
 
     #home  .header-content img{
         margin-top: 2rem;
@@ -536,8 +550,8 @@ footer{
     #about h2,
 #skills h2,
 #services h2,
-#portfolio h2,
-#contact h2{
+#contact h2,
+#portfolio h2{
    font-size: 30px; 
 }
 
@@ -548,12 +562,34 @@ footer{
 #skills .skills-content .row ,#services .row , #portfolio .row{
     grid-template-columns:1fr;
 }
+
+#contact .row{
+    padding: 2rem 1rem;
+}
+
 #portfolio .row{
-        margin-left: 3rem;
+    
+    margin-left: 3rem;
     margin-right: 3rem;
+    
 }
 
 #contact .row{
     padding: 2rem 1rem;
 }
+
+
+#contact .row input,
+#contact .row textarea{
+    margin: auto ;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    width: 92%;
+}
+
+#contact .row button{
+margin-left: 15px;
+}
+
 }
